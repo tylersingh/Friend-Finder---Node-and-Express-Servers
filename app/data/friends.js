@@ -22,7 +22,7 @@ let friends = [
     ]
   },
   {
-    name: "Tyler",
+    name: "Tyler T",
     photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "4",

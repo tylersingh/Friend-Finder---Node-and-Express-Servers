@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on all possible friends
 // ===============================================================================
 
-var friends = require("../data/friends");
+let friends = require("../data/friends");
 
 // ===============================================================================
 // ROUTING
@@ -37,19 +37,19 @@ module.exports = function(app) {
 
     // We will use this object to hold the "best match". We will constantly update it as we
     // loop through all of the options
-    var bestMatch = {
+    let bestMatch = {
       name: "",
       photo: "",
       friendDifference: Infinity
     };
 
     // Here we take the result of the user"s survey POST and parse it.
-    var userData = req.body;
-    var userScores = userData.scores;
+    let userData = req.body;
+    let userScores = userData.scores;
 
     // This variable will calculate the difference between the user"s scores and the scores of
     // each user in the database
-    var totalDifference;
+    let totalDifference;
 
     // Here we loop through all the friend possibilities in the database.
     for (var i = 0; i < friends.length; i++) {
