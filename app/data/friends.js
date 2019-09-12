@@ -4,10 +4,10 @@
 // ===============================================================================
 
 
-var friends = [
+let friends = [
   {
-    name: "Ahmed",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+    name: "Juan",
+    photo: "hhttps://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "5",
       "1",
@@ -22,8 +22,8 @@ var friends = [
     ]
   },
   {
-    name: "Jacob Deming",
-    photo: "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+    name: "Tyler",
+    photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "4",
       "2",
@@ -38,8 +38,8 @@ var friends = [
     ]
   },
   {
-    name: "Jeremiah Scanlon",
-    photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+    name: "Arantxa",
+    photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "5",
       "2",
@@ -54,8 +54,8 @@ var friends = [
     ]
   },
   {
-    name: "Louis T. Delia",
-    photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+    name: "Alia",
+    photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "3",
       "3",
@@ -70,8 +70,8 @@ var friends = [
     ]
   },
   {
-    name: "Lou Ritter",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+    name: "Mercedes",
+    photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "4",
       "3",
@@ -86,8 +86,8 @@ var friends = [
     ]
   },
   {
-    name: "Jordan Biason",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+    name: "Tyler",
+    photo: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/18034067_10212666010550130_6758634903902110154_n.jpg?_nc_cat=101&_nc_oc=AQlK7SdSrHx0Vnp1yXjxRwWWiQ4Q91-YC9EY7kUIqUyJJshVFB8Vwx4La9zIzPmd8Uo&_nc_ht=scontent-mia3-1.xx&oh=629f98178375273be94289fcabc7bcfb&oe=5E0755F5",
     scores: [
       "4",
       "4",
