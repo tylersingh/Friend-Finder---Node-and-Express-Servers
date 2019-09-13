@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on all possible friends
 // ===============================================================================
 
-let friends = require("../data/friends");
+const friends = require("../data/friends");
 
 // ===============================================================================
 // ROUTING
@@ -38,7 +38,7 @@ module.exports = function(app) {
     let bestMatch = {
       name: "",
       photo: "",
-      friendDifference: Infinity
+      friendDifference: 10000
     };
 
     // Here we take the result of the user"s survey POST and parse it.
