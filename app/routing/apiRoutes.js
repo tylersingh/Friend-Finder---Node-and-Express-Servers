@@ -28,10 +28,8 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.post("/api/friends", function(req, res) {
-    // Note the code here. Our "server" will respond to a user"s survey result
-    // Then compare those results against every user in the database.
-    // It will then calculate the difference between each of the numbers and the user"s numbers.
-    // It will then choose the user with the least differences as the "best friend match."
+    // calculate the difference between each of the numbers and the user"s numbers.
+    // choose the user with the least differences as the "best friend match."
     // In the case of multiple users with the same result it will choose the first match.
     // After the test, it will push the user to the database.
 
