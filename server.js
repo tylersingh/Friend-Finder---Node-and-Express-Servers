@@ -1,40 +1,25 @@
-// ==============================================================================
-// DEPENDENCIES
-// Series of npm packages that we will use to give our server useful functionality
-// ==============================================================================
+//set up dependencies
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
-var express = require("express");
+//creates express server and sets up a port
+const app = express(); 
+const port = process.env.PORT || 3000; 
 
-// ==============================================================================
-// EXPRESS CONFIGURATION
-// This sets up the basic properties for our express server
-// ==============================================================================
+//Body Parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.text());
+app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-// Tells node that we are creating an "express" server
-var app = express();
+// Static files
+// needs to be called before the routes in order to work
+app.use(express.static('app/public'));
 
-// Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8080;
+//Router
+require('./app/routing/api-routes.js')(app); 
+require('./app/routing/html-routes.js')(app);
 
-// express.json and express.urlEncoded make it easy for our server to interpret data sent to it.
-// The code below is pretty standard.
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// ================================================================================
-// ROUTER
-// The below points our server to a series of "route" files.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-// ================================================================================
-
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
-
-// ==============================================================================
-// LISTENER
-// The below code effectively "starts" our server
-// ==============================================================================
-
-app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
-});
+//Listening to the port that was set up
+app.listen(port, () => console.log("Listening on port %s", port));
